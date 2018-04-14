@@ -9,8 +9,8 @@ A chess artificial intelligence using the MTD-f algorithm for move selection and
 1. Clone the repo.
 2. Install python and virtualenv.
 3. [Download pypy binary](http://pypy.org/download.html).
-4. Run `virtualenv -p <pypy binary location here> <virtual env name here>` to set up your virtual environment.
-5. Run `source <name of env>/bin/activate` to activate your virtual environment.
+4. Run `virtualenv -p <pypy binary location here> venv` to set up your virtual environment.
+5. Run `source venv/bin/activate` to activate your virtual environment.
 6. Run `pip install -r requirements.txt` to install dependencies.
 7. Run `pypy main.py` to play against the AI and `pypy self_play.py` to watch the AI play against itself.
 8. Run `deactivate` to deactivate the virtual environment.
