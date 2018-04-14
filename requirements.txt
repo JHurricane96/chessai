@@ -1,1 +1,4 @@
-python-chess==0.15.4
+cffi==1.11.2
+greenlet==0.4.12
+python-chess==0.23.1
+readline==6.2.4.1

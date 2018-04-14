@@ -1,4 +1,5 @@
 import chess
+from chess.polyglot import zobrist_hash
 from evaluator import evaluator
 import transTable
 
@@ -12,7 +13,7 @@ class MoveSelector(object):
 	def _abNegamax(self, board, maxDepth, depth, alpha, beta):
 		alphaOriginal = alpha
 
-		zhash = board.zobrist_hash()
+		zhash = zobrist_hash(board)
 		entry = self._transTable.table.get(zhash)
 		if entry and entry.depth >= maxDepth - depth:
 			if entry.scoreType == self._transTable.EXACT_SCORE:
