@@ -18,8 +18,10 @@ to set up your virtual environment.
 5. Run `source <name of env>/bin/activate` to activate your virtual  
 environment.
 6. Run `pip install -r requirements.txt` to install dependencies.
-7. Run `pypy main.py` to play against the AI.
+7. Run `pypy main.py` to play against the AI and `pypy self_play.py` to watch the AI play against itself.
 8. Run `deactivate` to deactivate the virtual environment.
+
+**Note:** `main.py` and `self_play.py` both have `MAX_DEPTH` constants that can be adjusted to change the AI's strength. Increase it to increase the strength and decrease it to decrease the strength.
 
 ### Learning from dataset
 
