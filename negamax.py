@@ -107,7 +107,7 @@ class MoveSelector(object):
 		finalBoard1 = None
 		finalBoard2 = None
 
-		for depth in xrange(2, self._maxSearchDepth + 1):
+		for depth in range(2, self._maxSearchDepth + 1):
 			if depth % 2 == 0:
 				move, guess1, finalBoard1 = self._mtd(board, depth, guess1)
 			else:

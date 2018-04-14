@@ -24,7 +24,7 @@ def evaluator(board, result):
 	matPnts = initPnts = endPnts = 0
 	phase = totalPhase = 24
 
-	for i in xrange(0, 64):
+	for i in range(0, 64):
 		piece = board.piece_at(i)
 		if piece:
 			phase -= phasePnts[piece.piece_type - 1]
@@ -54,14 +54,14 @@ def findFeatures(board, color):
 	colorType = 1 if color else -1
 	phase = totalPhase = 24
 
-	for i in xrange(0, 64):
+	for i in range(0, 64):
 		piece = board.piece_at(i)
 		if piece:
 			phase -= phasePnts[piece.piece_type - 1]
 
 	phase = (phase * 256 + (totalPhase / 2)) / totalPhase
 
-	for i in xrange(0, 64):
+	for i in range(0, 64):
 		piece = board.piece_at(i)
 		if piece:
 			if piece.color:

@@ -15,16 +15,16 @@ def main():
 			break
 
 		move = moveSelector.selectMove(board)[0]
-		print move.uci()
+		print(move.uci())
 		board.push(move)
-		print board
+		print(board)
 
 		if board.is_game_over():
 			break
 
 		rawMove = ""
 		while rawMove == "":
-			rawMove = raw_input("Enter your move: ")
+			rawMove = input("Enter your move: ")
 			try:
 				move = chess.Move.from_uci(rawMove)
 			except ValueError:
@@ -34,6 +34,6 @@ def main():
 				rawMove = ""
 
 		board.push(move)
-		print board
+		print(board)
 
 main()

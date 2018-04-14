@@ -1,5 +1,5 @@
 class transTableEntry:
-	zobristHash = 0L
+	zobristHash = 0
 	scoreType = 0 #0 accurate; 1 lower bound; 2 upper bound
 	score = 0
 	bestMove = None

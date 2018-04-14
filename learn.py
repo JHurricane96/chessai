@@ -39,13 +39,13 @@ def main():
 		else:
 			continue
 
-		print "\nGame ", gamesCounter + 1
+		print("\nGame ", gamesCounter + 1)
 
 		# Clear transposition table
 		moveSelector.clearTransTable()
 
 		# Play as both black and white
-		for color in xrange(2):
+		for color in range(2):
 			# Use local copy of game
 			state = game
 			# Get board object from game
@@ -59,9 +59,9 @@ def main():
 			# Initialize turn counter
 			turnCounter = 0
 			if color:
-				print "White"
+				print("White")
 			else:
-				print "Black"
+				print("Black")
 
 			# Loop through game, move by move
 			while not state.is_end():
@@ -80,8 +80,8 @@ def main():
 					featuresFinal.append(fF)
 
 					turnCounter = turnCounter + 1
-					print "Turn ", turnCounter, '\r',
-			print '\n',
+					print("Turn ", turnCounter, '\r', end=' ')
+			print('\n', end=' ')
 
 			# Depending on winner, store final score
 			if winColor == color:
