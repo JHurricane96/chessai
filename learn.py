@@ -80,8 +80,8 @@ def main():
 					featuresFinal.append(fF)
 
 					turnCounter = turnCounter + 1
-					print("Turn ", turnCounter, '\r', end=' ')
-			print('\n', end=' ')
+					print("Turn ", turnCounter, '\r', end='')
+			print('\n', end='')
 
 			# Depending on winner, store final score
 			if winColor == color:
