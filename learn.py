@@ -157,4 +157,5 @@ def learn(wRawInit, wRawFin, fInit, fFinal, J, alpha, lambdaDecay, clampVal):
 	# Return final weights
 	return (wRawInit, wRawFin)
 
-main()
+if __name__ == "__main__":
+	main()
