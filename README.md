@@ -2,6 +2,12 @@
 
 A chess artificial intelligence using the MTD-f algorithm for move selection and that can learn from old games. It uses the python-chess library for board representation, move generation, zobrist hashing and reading .pgn files.
 
+## Demo
+
+This is a match played by the AI against itself. White has a search depth of 2, and black has a search depth of 3. Black wins.
+
+![](https://i.imgur.com/RGJON84.gif)
+
 ## Building
 
 ### Environment setup
