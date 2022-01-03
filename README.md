@@ -27,7 +27,7 @@ This is a match played by the AI against itself. White has a search depth of 2, 
 
 ### Learning from dataset
 
-1. Find and download a database of chess games in PGN format, or use [this](https://drive.google.com/file/d/0BwU3DiBuFdpWYnBBQWUtWXJTenM/view?usp=sharing).
+1. Find and download a database of chess games in PGN format, or use [this](https://drive.google.com/file/d/0BwU3DiBuFdpWYnBBQWUtWXJTenM/view?usp=sharing&resourcekey=0-3BZdBsC_qig_oggm8_1ogg).
 2. Place the downloaded .pgn file in the project root.
 3. In `config.py`, set `GAMES_FILE_NAME` to the name of the .pgn file. Feel free to tweak with other parameters too.
 4. Run `pypy learn.py` to learn.
